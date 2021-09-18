@@ -21,7 +21,7 @@ You can also try it out on https://hellist.com/discord (with the `;pet` command)
 
 Two examples in one (using [Eris](https://www.npmjs.com/package/eris) in the example but should be similar for other Discord Bot API wrappers).
 
-```
+```js
 const petPetGif = require('pet-pet-gif')
 
 ...
@@ -53,7 +53,7 @@ const petCommandExample = async (param) => {
 ## Options
 You can optionally specify the `options` argument (each field in the `options` field is optional).
 
-```
+```js
 let animatedGif = await petPetGif(param.member.avatarURL, {
     resolution: 128, // The width (or height) of the generated gif
     delay: 2.5, // Delay between each frame in centiseconds (1 cs = 10 ms). Defaults to 2.5 (~40 fps).
